@@ -1,7 +1,7 @@
 NAME = minishell
 CC = cc
 FLAGS = -Wall -Werror -Wextra -g
-READLINE_PATH = /Users/mazaroua/homebrew/Cellar/readline/8.2.1
+READLINE_PATH = /Users/abenheni/homebrew/Cellar/readline/8.2.1
 IFLAG = -I $(READLINE_PATH)/include/readline
 LFLAG = -L $(READLINE_PATH)/lib -lreadline
 SRC = minishell.c utils.c remove_spaces.c tokenizer.c tokenizer_utils.c tokenizer_utils2.c tokenizer_utils3.c syntax.c parser.c parser2.c parser_utils.c expander.c \
