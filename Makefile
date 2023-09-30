@@ -1,6 +1,6 @@
 NAME = minishell
 CC = cc
-FLAGS = -Wall -Werror -Wextra -g
+FLAGS = #-Wall -Werror -Wextra -g
 READLINE_PATH = /Users/abenheni/homebrew/Cellar/readline/8.2.1
 IFLAG = -I $(READLINE_PATH)/include/readline
 LFLAG = -L $(READLINE_PATH)/lib -lreadline

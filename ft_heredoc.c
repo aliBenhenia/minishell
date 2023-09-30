@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_heredoc.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mazaroua <mazaroua@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 02:20:07 by mazaroua          #+#    #+#             */
-/*   Updated: 2023/05/16 14:42:19 by mazaroua         ###   ########.fr       */
+/*   Updated: 2023/09/30 13:49:25 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ void	heredoc_prompt(char *delimiter, int fd)
 
 	while (1337)
 	{
-		buffer = readline("> ");
+		// buffer = readline("> ");
 		if (!buffer)
 		{
 			g_var.lastchance = 1;

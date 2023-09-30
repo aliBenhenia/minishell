@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minishell.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mazaroua <mazaroua@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/06 15:26:43 by mazaroua          #+#    #+#             */
-/*   Updated: 2023/05/16 14:52:38 by mazaroua         ###   ########.fr       */
+/*   Updated: 2023/09/30 14:02:08 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,13 @@ char	*prompt(void)
 {
 	char	*line;
 
-	line = readline("\x1B[36m""minishell$ ""\001\e[0m\002");
+	line = readline("\x1B[36m""shell-> $ ""\001\e[0m\002");
 	if (!line)
 	{
 		ft_putstr("exit\n");
 		exit(0);
 	}
-	add_history(line);
+	// add_history(line);
 	line = remove_additional_spaces(line);
 	return (line);
 }
